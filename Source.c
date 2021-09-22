@@ -1,5 +1,5 @@
 //версия, выводящая справа налево
-//алгоритм замещения
+//т.н. алгоритм замещения
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <stdint.h>
