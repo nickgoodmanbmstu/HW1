@@ -1,38 +1,43 @@
-//версия, выводящая справа налево
-//т.н. алгоритм замещения
+
+//works just as planned
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
 
 
-
 int main()
 {
 
-	int i;
-	int c;
+	int v;
+	int z;
 	int a;
-	scanf("%d", &i);
+	int c[64];
+	int i = 0;
+	//int x = 0;
+	scanf("%d", &v);
 
 	do
 	{
-		c = i;
-		i = i / 2;
-		a = 2 * i;
-		if (c == a)
+		z = v;
+		v = v / 2;
+		a = 2 * v;
+		if (z == a)
 		{
-
-			printf("0");
-
+			c[i] = 0;
+			//printf("0");
+			i++;
 		}
 		else
 		{
 
-			printf("1");
-
+			//printf("1");
+			c[i] = 1;
+			//printf("0");
+			i++;
 		}
-	} while (i > 0);
-
+	} while (v > 1);
+	c[i] = v;
+	for (i;i >= 0;i--) printf("%d", c[i]);
 	return 0;
 }
