@@ -1,13 +1,11 @@
 
-//works just as planned
-#define _CRT_SECURE_NO_WARNINGS 
+
+//works just as planned + beautified
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <stdint.h>
-#include <math.h>
 
 
-int main()
-{
+int main() {
 
 	int v;
 	int z;
@@ -17,19 +15,16 @@ int main()
 	//int x = 0;
 	scanf("%d", &v);
 
-	do
-	{
+	do {
 		z = v;
 		v = v / 2;
 		a = 2 * v;
-		if (z == a)
-		{
+		if (z == a) {
 			c[i] = 0;
 			//printf("0");
 			i++;
 		}
-		else
-		{
+		else {
 
 			//printf("1");
 			c[i] = 1;
@@ -38,6 +33,6 @@ int main()
 		}
 	} while (v > 1);
 	c[i] = v;
-	for (i;i >= 0;i--) printf("%d", c[i]);
+	for (i; i >= 0; i--) printf("%d", c[i]);
 	return 0;
 }
