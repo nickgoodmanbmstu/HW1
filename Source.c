@@ -1,4 +1,4 @@
-//проверить значение, возвращаемое функцией scanf
+//проверить значение, возвращаемое функцией scanf - done
 //works with negative numbers + beautified
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
