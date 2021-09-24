@@ -14,23 +14,16 @@ int main() {
 	int i = 0;
 	//int x = 0;
 	scanf("%d", &v);
-	
-	
+
 	if (v < -32767) printf("Sorry, the number is too large or not a decimal number at all");
 
-	
-	
-	else
-	{
+	else {
 		if (v > 32766) printf("Sorry, the number is too large  or not a decimal number at all");
-		else
-		{
+		else {
 			if (v == 1) printf("1");
-			else
-			{
+			else {
 				if (v == -1) printf("-1");
-				else
-				{
+				else {
 					do {
 						z = v;
 						v = v / 2;
