@@ -16,13 +16,13 @@ int main() {
 	scanf("%d", &v);
 	
 	
-	if (v < -32767) printf("Sorry, the negative number is too large");
+	if (v < -32767) printf("Sorry, the number is too large or not a decimal number at all");
 
 	
 	
 	else
 	{
-		if (v > 32766) printf("Sorry, the number is too large");
+		if (v > 32766) printf("Sorry, the number is too large  or not a decimal number at all");
 		else
 		{
 			if (v == 1) printf("1");
